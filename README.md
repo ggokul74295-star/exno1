@@ -26,19 +26,23 @@ import numpy as np
 import pandas as pd
 dt=pd.read_csv("SAMPLEIDS.csv")
 dt
+dt
 ```
 ![01sS](https://github.com/user-attachments/assets/b9e00162-0893-4e0a-869a-72ff7068e5df)
 ```
 dt.head()
+dt
 ```
 ![02](https://github.com/user-attachments/assets/7adb359e-7246-431a-9fbf-e5978b8416ab)
 ```
 dt.tail()
+dt
 ```
 
 ![03](https://github.com/user-attachments/assets/8bd2f870-2ac0-4f32-ba9a-ac341abd13eb)
 ```
 dt.isnull()
+dt
 ```
 ![4](https://github.com/user-attachments/assets/b95b5a4a-b46b-4281-9fd6-59f3b3eaade5)
 ```
