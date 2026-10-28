@@ -21,70 +21,51 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
-import numpy as np
-import pandas as pd
-dt=pd.read_csv("SAMPLEIDS.csv")
-dt
-dt
+# DATA CLEANING PROCESS
+<img width="901" height="338" alt="Screenshot 2026-10-27 201724" src="https://github.com/user-attachments/assets/2eaa9f77-ba0d-47b0-b390-1b0aa4f8adac" />
+<img width="899" height="293" alt="Screenshot 2026-10-27 201730" src="https://github.com/user-attachments/assets/500b13cb-5535-49c2-acb4-c108d1cbabe6" />
+<img width="886" height="188" alt="Screenshot 2026-10-27 201741" src="https://github.com/user-attachments/assets/ea801bf0-6267-4f2b-887a-0b430a0ab022" />
+<img width="883" height="164" alt="Screenshot 2026-10-27 201747" src="https://github.com/user-attachments/assets/3451d8d7-d06b-4c38-bbc0-6efc9e5a0a12" />
+<img width="893" height="254" alt="Screenshot 2026-10-27 201753" src="https://github.com/user-attachments/assets/805b84b8-7b96-4687-95b2-b9c8971daad6" />
+<img width="882" height="38" alt="Screenshot 2026-10-27 201801" src="https://github.com/user-attachments/assets/e0862a6a-d240-42c6-a98a-d97169663de7" />
 
-![01sS](https://github.com/user-attachments/assets/b9e00162-0893-4e0a-869a-72ff7068e5df)
+<img width="890" height="311" alt="Screenshot 2026-10-27 201834" src="https://github.com/user-attachments/assets/888b5851-f5aa-46de-b9a3-d8ec1666581e" />
 
-dt.head()
-dt
+<img width="873" height="165" alt="Screenshot 2026-10-27 201841" src="https://github.com/user-attachments/assets/8a1b5a27-963e-468b-9669-ff31bdd5e488" />
 
-![02](https://github.com/user-attachments/assets/7adb359e-7246-431a-9fbf-e5978b8416ab)
+<img width="893" height="283" alt="Screenshot 2026-10-27 201846" src="https://github.com/user-attachments/assets/6c594139-abc3-4fd1-9e8a-51e515836411" />
 
-dt.tail()
-dt
+<img width="875" height="257" alt="Screenshot 2026-10-27 201855" src="https://github.com/user-attachments/assets/21e84766-4efb-485d-8d9b-40a37b48419c" />
 
+<img width="874" height="261" alt="Screenshot 2026-10-27 201902" src="https://github.com/user-attachments/assets/32bebac9-95af-4cb9-95a8-9a8cf94c6598" />
 
-![03](https://github.com/user-attachments/assets/8bd2f870-2ac0-4f32-ba9a-ac341abd13eb)
+<img width="878" height="405" alt="Screenshot 2026-10-27 201911" src="https://github.com/user-attachments/assets/0204c0ff-0f6c-46aa-bb3d-2eceedc2a55d" />
 
-dt.isnull()
-dt
+<img width="851" height="337" alt="Screenshot 2026-10-27 201917" src="https://github.com/user-attachments/assets/4df60855-1a27-41b8-b91c-2512daba0797" />
 
-![4](https://github.com/user-attachments/assets/b95b5a4a-b46b-4281-9fd6-59f3b3eaade5)
+<img width="882" height="331" alt="Screenshot 2026-10-27 201924" src="https://github.com/user-attachments/assets/b9ac7402-f8f4-450f-8bd8-095ef19d5a5d" />
 
-dt.isnull()
+# OUTLIERS DETECTION AND REMOVAL USING IQR
 
-![06](https://github.com/user-attachments/assets/b08e3114-d3b2-44a0-9723-6d388c4e28f3)
+<img width="868" height="320" alt="Screenshot 2026-10-27 201931" src="https://github.com/user-attachments/assets/74d4e93c-1701-4c3f-8484-399fa958386d" />
 
-dt.notnull()
+<img width="853" height="287" alt="Screenshot 2026-10-27 201936" src="https://github.com/user-attachments/assets/60cf88f3-1743-480e-b4a4-fd483325d8b6" />
 
-![07](https://github.com/user-attachments/assets/7c797369-b3a8-4ee3-883d-d5d55d11a71e)
+<img width="886" height="275" alt="Screenshot 2026-10-27 201943" src="https://github.com/user-attachments/assets/06b59929-1d63-4295-a862-96b3192c7ed9" />
 
-dt.dropna(axis=1)
+<img width="875" height="259" alt="Screenshot 2026-10-27 201949" src="https://github.com/user-attachments/assets/14f34aa2-b647-48d6-a05b-4e8cc8360dcf" />
 
-![8](https://github.com/user-attachments/assets/266fa95e-8262-450f-8c0b-a16eca0ae8a7)
+<img width="851" height="168" alt="Screenshot 2026-10-27 201955" src="https://github.com/user-attachments/assets/fd8537d4-d9fe-4921-aaa8-de75c43ed3e4" />
 
-dt.dropna(axis=0)
+<img width="898" height="302" alt="Screenshot 2026-10-27 202000" src="https://github.com/user-attachments/assets/b95c8c7f-5894-42dc-b7db-d9a2bde8c28e" />
 
-![9](https://github.com/user-attachments/assets/c3968179-9aac-410a-af15-18d687c80750)
+<img width="887" height="232" alt="Screenshot 2026-10-27 202007" src="https://github.com/user-attachments/assets/8288f8b0-9dbf-4e93-a4c3-f55501347f80" />
 
-dt.fillna(0)
+<img width="881" height="113" alt="Screenshot 2026-10-27 202013" src="https://github.com/user-attachments/assets/71ba2d74-6f5a-4f2d-8a8e-c5c99ee935b0" />
 
-![10](https://github.com/user-attachments/assets/cd973d59-5bdd-4a2e-b14a-648be3840e28)
-
-dt.fillna(method='ffill')
-
-q1=ir.sepal_width.quantile(0.25)
-q3=ir.sepal_width.quantile(0.75)
-iqr=q3-q1
-rid=ir[((ir.sepal_width<(q1-1.5*iqr))|(ir.sepal_width>(q3+1.5*iqr)))]
-rid['sepal_width']
-
-![11](https://github.com/user-attachments/assets/ed5e36b7-5a4b-4cc6-a4a1-ee6cafe87ce2)
-
-ir=pd.read_csv("iris.csv")
-ir
-rid=ir[~((ir.sepal_width<(q1-1.5*iqr))|(ir.sepal_width>(q3+1.5*iqr)))]
-rid
-import scipy.stats as stats
-z=np.abs(stats.zscore(ir.sepal_width))
-z
-
-![12](https://github.com/user-attachments/assets/d912576a-535f-4c84-94ee-69a75617d2b3)
-
+<img width="886" height="112" alt="Screenshot 2026-10-27 202019" src="https://github.com/user-attachments/assets/8bf7aff1-79f0-433e-8b9d-e737fc7e040a" />
 
 # Result
-         Thus we have cleaned the data and removed the outliers by detection using IQR and Z-score method.
+The given dataset was successfully read, cleaned, and saved to a new file.
+
+         
